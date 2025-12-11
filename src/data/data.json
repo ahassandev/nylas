@@ -1,0 +1,44 @@
+{
+    "Navbar": {
+        "logo": "Logo.png",
+        "name": "nylas",
+        "navLinks": [
+            {
+                "text": "Product",
+                "image": "arrow-down.svg"
+            },
+
+             {
+                "text": "Solutions"
+            },
+             {
+                "text": "Developers",
+                "image": "arrow-down.svg"
+            },
+             {
+                "text": "Resources",
+                "image": "arrow-down.svg"
+            },
+             {
+                "text": "Pricing",
+                "image": "arrow-down.svg"
+            }
+        ],
+
+        "button": [
+            {
+                "contact": "Contact sales",
+                "image": "arrow-right.svg"
+            },  
+            {
+                "login": "Log in",
+                "image": "arrow-right.svg"
+            },  
+            {
+                "build": "Build for free",  
+                "image": "arrow-right.svg"
+            }
+        ]
+        
+    }
+}
