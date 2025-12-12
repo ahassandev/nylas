@@ -40,5 +40,20 @@
                 "className": "rounded text-white cursor-pointer"
             }
         ]
+    },
+    "hero": {
+        "image": "herosection-bg.png",
+        "heading": "Integrate inbox, calendar and meetings into your app",
+        "text": "Nylas is the API that lets you integrate with Gmail, Microsoft, IMAP, Zoom, and 250+ mail, calendar and meeting providers in 5 minutes.",
+        "button2": [
+            {
+                "text": "Get API Key",
+                "style": "bg-white text-black cursor-pointer"
+            },
+            {
+                "text": "Documentation",
+                "style": "text-gray-300 cursor-pointer hover:text-blue-500"
+            }
+        ]
     }
-}   
+}
