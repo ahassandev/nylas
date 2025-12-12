@@ -28,7 +28,8 @@
         "button": [
             {
                 "contact": "Contact sales",
-                "image": "arrow-right.svg"
+                "image": "arrow-right.svg",
+                "className": "cursor-poiner"
             },  
             {
                 "login": "Log in",
