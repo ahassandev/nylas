@@ -7,39 +7,38 @@
                 "text": "Product",
                 "image": "arrow-down.svg"
             },
-
-             {
+            {
                 "text": "Solutions"
             },
-             {
+            {
                 "text": "Developers",
                 "image": "arrow-down.svg"
             },
-             {
+            {
                 "text": "Resources",
                 "image": "arrow-down.svg"
             },
-             {
+            {
                 "text": "Pricing",
                 "image": "arrow-down.svg"
             }
         ],
-
         "button": [
             {
-                "contact": "Contact sales",
+                "text": "Contact sales",
                 "image": "arrow-right.svg",
-                "className": "cursor-poiner"
-            },  
+                "className": "text-white ml-5 cursor-pointer hover:text-blue-500"
+            },
             {
-                "login": "Log in",
-                "image": "arrow-right.svg"
-            },  
+                "text": "Log in",
+                "image": "arrow-right.svg",
+                "className": "border border-white rounded-3xl cursor-pointer"
+            },
             {
-                "build": "Build for free",  
-                "image": "arrow-right.svg"
+                "text": "Build for free",
+                "image": "arrow-right.svg",
+                "className": "rounded text-white cursor-pointer"
             }
         ]
-        
     }
-}
+}   
