@@ -54,6 +54,13 @@
                 "text": "Documentation",
                 "style": "text-gray-300 cursor-pointer hover:text-blue-500"
             }
+        ],
+        "codesnippet": [
+            {
+                "title": "Send an Email on behalf of your user",
+                "language": "Python",
+                "code": "from nylas import Client\nnylas = Client(api_key='<NYLAS_API_KEY>')\nmessage = nylas.messages.send(\n    '<USER_GRANT_ID>',\n    request_body={\n        \"to\": [{ \"name\": '<RECIPIENT_NAME>', \"email\": '<RECIPIENT_EMAIL>' }],\n        \"subject\": '<EMAIL_SUBJECT>',\n        \"body\": '<EMAIL_BODY>'\n    }\n)"
+            }
         ]
     }
 }
