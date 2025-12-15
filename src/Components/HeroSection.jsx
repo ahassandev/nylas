@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { DataContext } from "../DataContext";
+import CodeSnippet from "../Components/CodeSnippet";
 
 const HeroSection = () => {
   const { data } = useContext(DataContext);
@@ -30,6 +31,20 @@ const HeroSection = () => {
           ))}
         </div>
       </div>
+
+      <section className="min-h-screen bg-black text-white p-10">
+        <h1 className="text-4xl font-bold mb-10">Code Examples</h1>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {heroData.codeSnippets?.map((item) => (
+            <CodeSnippet
+              key={item.id}
+              title={item.title}
+              snippets={item.snippets}
+            />
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

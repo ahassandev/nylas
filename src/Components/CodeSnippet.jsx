@@ -1,15 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 
-const CodeSnippet = ({ title, language, code }) => {
+const CodeSnippet = ({ title, snippets }) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // ✅ safety check
+  if (!snippets || snippets.length === 0) {
+    return null;
+  }
+
+  const activeSnippet = snippets[activeIndex];
+
+  const copyCode = () => {
+    navigator.clipboard.writeText(activeSnippet.code);
+    alert("Code copied!");
+  };
+
   return (
-    <div className="bg-gray-900 text-white rounded-xl p-6 w-full max-w-3xl mx-auto shadow-lg">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="font-semibold text-lg">{title}</h2>
-        <span className="bg-gray-800 px-3 py-1 rounded text-sm">{language}</span>
+    <div className="bg-[#0f172a] text-white p-4 rounded-xl w-full">
+      <h3 className="mb-3 font-semibold">{title}</h3>
+
+      <div className="flex gap-2 mb-3 flex-wrap">
+        {snippets.map((item, index) => (
+          <button
+            key={index}
+            onClick={() => setActiveIndex(index)}
+            className={`px-3 py-1 text-sm rounded ${
+              activeIndex === index ? "bg-blue-500" : "bg-gray-700"
+            }`}
+          >
+            {item.language}
+          </button>
+        ))}
       </div>
-      <pre className="overflow-x-auto">
-        <code>{code}</code>
+
+      <pre className="bg-black p-4 rounded text-sm overflow-x-auto">
+        <code>{activeSnippet.code}</code>
       </pre>
+
+      <div className="text-right mt-3">
+        <button
+          onClick={copyCode}
+          className="bg-blue-500 px-4 py-1 rounded text-sm"
+        >
+          Copy
+        </button>
+      </div>
     </div>
   );
 };

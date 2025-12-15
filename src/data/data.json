@@ -55,11 +55,32 @@
                 "style": "text-gray-300 cursor-pointer hover:text-blue-500"
             }
         ],
-        "codesnippet": [
+        "codeSnippets": [
             {
+                "id": 1,
                 "title": "Send an Email on behalf of your user",
-                "language": "Python",
-                "code": "from nylas import Client\nnylas = Client(api_key='<NYLAS_API_KEY>')\nmessage = nylas.messages.send(\n    '<USER_GRANT_ID>',\n    request_body={\n        \"to\": [{ \"name\": '<RECIPIENT_NAME>', \"email\": '<RECIPIENT_EMAIL>' }],\n        \"subject\": '<EMAIL_SUBJECT>',\n        \"body\": '<EMAIL_BODY>'\n    }\n)"
+                "snippets": [
+                    {
+                        "language": "JavaScript",
+                        "code": "import Nylas from 'nylas';\n\nconst nylas = new Nylas({ apiKey: '<NYLAS_API_KEY>' });\n\nconst sentMessage = await nylas.messages.send({\n  identifier: '<USER_GRANT_ID>',\n  requestBody: {\n    to: [{ name: '<RECIPIENT_NAME>', email: '<RECIPIENT_EMAIL>' }],\n    subject: '<EMAIL_SUBJECT>',\n    body: '<EMAIL_BODY>'\n  }\n});"
+                    },
+                    {
+                        "language": "Node.js",
+                        "code": "import Nylas from 'nylas';\n\nconst nylas = new Nylas({ apiKey: '<NYLAS_API_KEY>' });\n\nconst sentMessage = await nylas.messages.send({\n  identifier: '<USER_GRANT_ID>',\n  requestBody: {\n    to: [{ name: '<RECIPIENT_NAME>', email: '<RECIPIENT_EMAIL>' }],\n    subject: '<EMAIL_SUBJECT>',\n    body: '<EMAIL_BODY>'\n  }\n});"
+                    },
+                    {
+                        "language": "Ruby",
+                        "code": "require 'nylas'\n\nnylas = Nylas::Client.new(api_key: \"<NYLAS_API_KEY>\")\n\nrequest_body = {\n  subject: '<EMAIL_SUBJECT>',\n  body: '<EMAIL_BODY>',\n  to: [{ name: '<RECIPIENT_NAME>', email: '<RECIPIENT_EMAIL>' }]\n}\n\nemail, response = nylas.messages.send('<USER_GRANT_ID>', request_body)"
+                    },
+                    {
+                        "language": "Python",
+                        "code": "from nylas import Client\nnylas = Client(api_key='<NYLAS_API_KEY>')\nmessage = nylas.messages.send(\n    '<USER_GRANT_ID>',\n    request_body={\n        \"to\": [{ \"name\": '<RECIPIENT_NAME>', \n        \"email\": '<RECIPIENT_EMAIL>' }],\n        \"subject\": '<EMAIL_SUBJECT>',\n        \"body\": '<EMAIL_BODY>'\n    }\n)"
+                    },
+                    {
+                        "language": "Kotlin",
+                        "code": "import com.nylas.NylasClient\nval nylas = NylasClient(apiKey = '<NYLAS_API_KEY>')\n\nval recipients = listOf(EmailName('<RECIPIENT_EMAIL>', '<RECIPIENT_NAME>'))\n\nval requestBody = SendMessageRequest.Builder(recipients)\n    .subject('<EMAIL_SUBJECT>')\n    .body('<EMAIL_BODY>')\n    .build()\n\nval emailResponse = nylas.messages().send('<USER_GRANT_ID>', requestBody)"
+                    }
+                ]
             }
         ]
     }
