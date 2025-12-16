@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const CodeSnippet = ({ title, snippets }) => {
-  // Safety check
+  
   if (!snippets || snippets.length === 0) {
     return null;
   }
@@ -20,11 +20,11 @@ const CodeSnippet = ({ title, snippets }) => {
   return (
     <div className="bg-[#0f172a] text-white p-6 rounded-xl">
 
-      {/* Header */}
+      
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-semibold">{title}</h3>
 
-        {/* Language selector */}
+        
         <select
           className="bg-gray-800 px-3 py-1 rounded"
           value={activeLanguage}
@@ -38,12 +38,12 @@ const CodeSnippet = ({ title, snippets }) => {
         </select>
       </div>
 
-      {/* Code */}
+      
       <pre className="bg-black p-4 rounded text-sm overflow-x-auto">
         <code>{currentSnippet.code}</code>
       </pre>
 
-      {/* Copy */}
+      
       <div className="text-right mt-3">
         <button
           onClick={copyCode}
