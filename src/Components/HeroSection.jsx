@@ -14,20 +14,20 @@ const HeroSection = () => {
         backgroundSize: "cover",
       }}
     >
-      {/* Overlay */}
+      
       <div className="min-h-screen bg-black/70 flex flex-col justify-center items-center text-center px-6">
         
-        {/* Heading */}
+        
         <h1 className="text-5xl md:text-6xl font-bold max-w-4xl leading-tight">
           {heroData.heading}
         </h1>
 
-        {/* Subtext */}
+        
         <p className="mt-6 text-lg text-gray-300 max-w-2xl">
           {heroData.text}
         </p>
 
-        {/* Buttons */}
+
         <div className="mt-8 flex justify-center gap-4 flex-wrap">
           {heroData.button2.map((btn, index) => (
             <button
@@ -39,7 +39,7 @@ const HeroSection = () => {
           ))}
         </div>
 
-        {/* Code Snippets */}
+
         {heroData.codeSnippets?.length > 0 && (
           <div className="mt-16 w-full max-w-3xl text-start">
             {heroData.codeSnippets.map((item) => (
