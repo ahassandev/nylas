@@ -12,6 +12,8 @@ const CodeSnippet = ({ title, snippets }) => {
     (s) => s.language === activeLanguage
   );
 
+
+
   const copyCode = () => {
     navigator.clipboard.writeText(currentSnippet.code);
     alert("Code copied!");
@@ -26,7 +28,7 @@ const CodeSnippet = ({ title, snippets }) => {
 
         
         <select
-          className="bg-gray-800 px-3 py-1 rounded"
+          className="bg-gray-800 px-2 py-3 rounded"
           value={activeLanguage}
           onChange={(e) => setActiveLanguage(e.target.value)}
         >
