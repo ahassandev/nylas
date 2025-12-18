@@ -84,8 +84,7 @@
             }
         ]
     },
-
-    "logos":[
+    "logos": [
         {
             "image": "WIX-1.png"
         },
@@ -104,7 +103,11 @@
         {
             "image": "Apollo.io-Logo.png"
         }
+    ],
 
-        
-    ]
+    "meetnylas": {
+        "heading": "Meet Nylas",
+        "title": "A developer-first solution for custom communication experiences",
+        "text": "Securely integrate with every email, calendar, and contacts provider using a single interface to streamline your users’ workflows. Build real-time, bi-directional communications in your app up to 40x faster, saving months of development time."
+    }
 }
