@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const CodeSnippet = ({ title, snippets }) => {
-  
+
   if (!snippets || snippets.length === 0) {
     return null;
   }
@@ -12,23 +12,20 @@ const CodeSnippet = ({ title, snippets }) => {
     (s) => s.language === activeLanguage
   );
 
-
-
   const copyCode = () => {
     navigator.clipboard.writeText(currentSnippet.code);
     alert("Code copied!");
   };
 
   return (
-    <div className="bg-[#0f172a] text-white p-6 rounded-xl">
+    <div className="bg-[#0f172a] text-white p-6 rounded-xl w-full">
 
-      
+      {/* Title + Language */}
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-semibold">{title}</h3>
 
-        
         <select
-          className="bg-gray-800 px-2 py-3 rounded"
+          className="bg-gray-800 px-2 py-2 rounded"
           value={activeLanguage}
           onChange={(e) => setActiveLanguage(e.target.value)}
         >
@@ -40,12 +37,12 @@ const CodeSnippet = ({ title, snippets }) => {
         </select>
       </div>
 
-      
+      {/* Code */}
       <pre className="bg-black p-4 rounded text-sm overflow-x-auto">
         <code>{currentSnippet.code}</code>
       </pre>
 
-      
+      {/* Copy */}
       <div className="text-right mt-3">
         <button
           onClick={copyCode}
