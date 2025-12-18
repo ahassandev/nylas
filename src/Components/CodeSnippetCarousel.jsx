@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import CodeSnippet from "./CodeSnippet";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const CodeSnippetCarousel = ({ codeSnippets }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,7 +8,7 @@ const CodeSnippetCarousel = ({ codeSnippets }) => {
 
   const prevSlide = () => {
     setCurrentIndex((prev) =>
-      prev === 0 ? codeSnippets.length - 1 : prev - 1
+      prev === 0 ? codeSnippets.length - 1 : prev -  1
     );
   };
 
@@ -20,40 +19,46 @@ const CodeSnippetCarousel = ({ codeSnippets }) => {
   };
 
   return (
-    <div className="relative">
+    <div className="w-full">
 
-      {/* SLIDER */}
+      {/* CODE SNIPPET */}
       <CodeSnippet
         title={codeSnippets[currentIndex].title}
         snippets={codeSnippets[currentIndex].snippets}
       />
 
-      {/* ARROWS */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-[-50px] top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-2 rounded-full"
-      >
-        <ChevronLeft className="text-white" />
-      </button>
+      {/* CONTROLS (BOTTOM) */}
+      <div className="mt-4 flex flex-col items-center gap-4">
 
-      <button
-        onClick={nextSlide}
-        className="absolute right-[-50px] top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-2 rounded-full"
-      >
-        <ChevronRight className="text-white" />
-      </button>
+        {/* ARROWS */}
+        <div className="flex gap-6">
+          <button
+            onClick={prevSlide}
+            className="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition"
+          >
+            ←
+          </button>
 
-      {/* DOTS */}
-      <div className="flex justify-center gap-2 mt-4">
-        {codeSnippets.map((_, index) => (
-          <span
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`h-2 w-2 rounded-full cursor-pointer transition ${
-              index === currentIndex ? "bg-white" : "bg-white/40"
-            }`}
-          />
-        ))}
+          <button
+            onClick={nextSlide}
+            className="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition"
+          >
+            →
+          </button>
+        </div>
+
+        {/* DOTS */}
+        <div className="flex gap-2">
+          {codeSnippets.map((_, index) => (
+            <span
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`h-2 w-2 rounded-full cursor-pointer transition ${
+                index === currentIndex ? "bg-white" : "bg-white/40"
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ const HeroSection = () => {
       }}
     >
       <div className="min-h-screen bg-black/70 flex flex-col justify-center items-center text-center px-6">
-        <h1 className="text-5xl md:text-6xl font-bold max-w-4xl leading-tight">
+        <h1 className="text-5xl md:text-6xl font-bold max-w-4xl leading-tight mt-16">
           {heroData.heading}
         </h1>
 

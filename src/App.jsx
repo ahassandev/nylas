@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroSection";
 import CodeSnippet from "./Components/CodeSnippet";
 import CodeSnippetCarousel from "./Components/CodeSnippetCarousel";
+import LogosBar from "./Components/LogosBar";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <HeroSection />
       <CodeSnippet />
       <CodeSnippetCarousel/>
+      <LogosBar/>
     </div>
   );
 };

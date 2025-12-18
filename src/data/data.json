@@ -83,5 +83,28 @@
                 ]
             }
         ]
-    }
+    },
+
+    "logos":[
+        {
+            "image": "WIX-1.png"
+        },
+        {
+            "image": "logo-crunchbase.svg"
+        },
+        {
+            "image": "Compass.png"
+        },
+        {
+            "image": "logo-ceridian-1.svg"
+        },
+        {
+            "image": "TalentReef-Mitratech-Logo-Color94.png"
+        },
+        {
+            "image": "Apollo.io-Logo.png"
+        }
+
+        
+    ]
 }
