@@ -2,9 +2,7 @@ import React, { useState } from "react";
 
 const CodeSnippet = ({ title, snippets }) => {
 
-  if (!snippets || snippets.length === 0) {
-    return null;
-  }
+  if (!snippets || snippets.length === 0) return null;
 
   const [activeLanguage, setActiveLanguage] = useState(snippets[0].language);
 
@@ -12,20 +10,17 @@ const CodeSnippet = ({ title, snippets }) => {
     (s) => s.language === activeLanguage
   );
 
-  const copyCode = () => {
-    navigator.clipboard.writeText(currentSnippet.code);
-    alert("Code copied!");
-  };
-
   return (
-    <div className="bg-[#0f172a] text-white p-6 rounded-xl w-full">
+    <div className="rounded-2xl overflow-hidden bg-gradient-to-b from-[#1b1f26] to-[#0f172a] shadow-xl">
 
-      {/* Title + Language */}
-      <div className="flex justify-between items-center mb-4">
-        <h3 className="text-lg font-semibold">{title}</h3>
+      {/* TOP BAR */}
+      <div className="flex justify-between items-center px-6 py-4 border-b border-white/10">
+        <h3 className="text-white font-semibold text-lg">
+          {title}
+        </h3>
 
         <select
-          className="bg-gray-800 px-2 py-2 rounded"
+          className="bg-[#111827] text-white px-3 py-1 rounded-md border border-white/20"
           value={activeLanguage}
           onChange={(e) => setActiveLanguage(e.target.value)}
         >
@@ -37,20 +32,10 @@ const CodeSnippet = ({ title, snippets }) => {
         </select>
       </div>
 
-      {/* Code */}
-      <pre className="bg-black p-4 rounded text-sm overflow-x-auto">
+      {/* CODE */}
+      <pre className="px-6 py-5 text-sm overflow-x-auto bg-[#0b1220] text-gray-200">
         <code>{currentSnippet.code}</code>
       </pre>
-
-      {/* Copy */}
-      <div className="text-right mt-3">
-        <button
-          onClick={copyCode}
-          className="bg-gray-700 hover:bg-blue-500 px-4 py-1 rounded"
-        >
-          Copy
-        </button>
-      </div>
     </div>
   );
 };
