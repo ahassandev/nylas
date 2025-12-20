@@ -7,7 +7,7 @@ const LogosBar = () => {
   return (
     <div className="w-full bg-white py-10">
       <div className="max-w-6xl mx-auto flex items-center justify-center gap-14">
-        {data.logos.map((logo, index) => (
+        {data.logos.map((logo, index) => (  
           <img
             key={index}
             src={`/${logo.image}`}
