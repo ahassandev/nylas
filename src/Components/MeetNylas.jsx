@@ -13,8 +13,8 @@ function MeetNylas() {
         <p className="mt-4 text-lg w-3xl">{meetnylas.text}</p>
       </div>
       <div>
-        <NylasApi/>
-      </div>
+        <NylasApi />
+      </div>  
     </div>
   )
 }

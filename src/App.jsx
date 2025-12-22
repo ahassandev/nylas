@@ -5,8 +5,7 @@ import CodeSnippet from "./Components/CodeSnippet";
 import CodeSnippetCarousel from "./Components/CodeSnippetCarousel";
 import LogosBar from "./Components/LogosBar";
 import MeetNylas from "./Components/MeetNylas";
-import NylasApi from "./Components/NylasApi";
-
+ 
 const App = () => {
   return (
     <div>
