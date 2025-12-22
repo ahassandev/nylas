@@ -6,6 +6,7 @@ import CodeSnippetCarousel from "./Components/CodeSnippetCarousel";
 import LogosBar from "./Components/LogosBar";
 import MeetNylas from "./Components/MeetNylas";
 import Accordion from "./Components/Accordion";
+import Developers from "./Components/Developers";
  
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <LogosBar/>
       <MeetNylas/>
       <Accordion />
+      <Developers />
     </div>
   );
 };

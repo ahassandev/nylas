@@ -14,9 +14,9 @@ const Accordion = () => {
   };
 
   return (
-    <div className="mt-28 px-10">
+    <div className="mt-28 px-10 pb-20">
       <h2 className="text-4xl font-semibold mb-6 text-center">{heading}</h2>
-      <div className="flex flex-col lg:flex-row gap-10">
+      <div className="flex flex-col lg:flex-row gap-10 mt-8">
        
         <div className="w-full lg:w-1/2 flex flex-col items-center">
           <div className="w-full space-y-4">

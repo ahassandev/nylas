@@ -158,6 +158,12 @@
             "caption": "Learn More"
         }
     ]
+    },
+
+    "developersData":{
+        "title": "For developers",
+        "heading": "Speed up your development with easy-to-use APIs",
+        "text": "Nylas APIs simplifies integration complexities, offering a unified API solution tailored for developers."
     }
    
 }
