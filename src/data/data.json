@@ -128,5 +128,36 @@
             "text": "Join, record, and transcribe meetings across platforms to build AI-powered meeting and notes experiences.",
             "caption": "Explore the Notetaker API"
         }
+    ],
+
+    "accordianData":  {
+        "heading": "Powerful APIs for any industry",
+         "accordianList": [
+        {
+            "image": "accordian 1.png",
+            "title": "Embed email and scheduling in your CRM",
+            "text": "Simplify client communications and scheduling by seamlessly integrating with all email providers in your CRM, boosting customer interactions and team efficiency.",
+            "caption": "Learn More"
+        },
+          {
+            "image": "accordian 2.png",
+            "title": "Revolutionize the real estate software experience",
+            "text": "Seamlessly elevate your real estate platform with Nylas’ streamlined communication, data-driven client management, and automated virtual tour scheduling all in one place.",
+            "caption": "Learn More"
+        },
+          {
+            "image": "accordian 3.png",
+            "title": "Accelerate time-to-hire",
+            "text": "Enhance your application tracking system with automated email and scheduling features that take the pain out of hiring.",
+            "caption": "Learn More"
+        },
+          {
+            "image": "accordian 4.png",
+            "title": "Enhance e-sign workflows across all email providers",
+            "text": "Boost document delivery while maintaining end-user trust with secure and reliable contextual email capabilities. ",
+            "caption": "Learn More"
+        }
     ]
+    }
+   
 }
