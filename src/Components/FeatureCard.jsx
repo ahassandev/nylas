@@ -3,24 +3,22 @@ import { DataContext } from "../DataContext";
 
 function FeatureCard() {
   const { data } = useContext(DataContext);
+  const featureCards = data.featureCard;
 
   return (
-    <div>
-      <div className="grid grid-cols-2 w-2xl gap-10 mt-10">
-        {data.featureCard.map((item, index) => (
-          <div key={index} className="">
-            <img 
-              src={`/${item.image}`} 
-              alt={item.title} 
-              className="h-9" 
-            />
-            <h4 className="text-2xl text-white">{item.title}</h4>
-            <p className="text-xl text-gray-400">{item.text}</p>
+    <div className="grid grid-cols-2 gap-6 w-full pr-10">
+      {featureCards.map((item, index) => (
+        <div key={index} className="flex items-start gap-4">
+          <img src={`/${item.image}`} alt="icon" className="h-10 w-10" />
+
+          <div>
+            <h4 className="text-xl font-semibold text-white">{item.title}</h4>
+            <p className="text-gray-400 text-sm">{item.text}</p>
           </div>
-        ))}
-      </div>    
+        </div>
+      ))}
     </div>
-  )
+  );
 }
 
 export default FeatureCard;
