@@ -164,6 +164,71 @@
         "title": "For developers",
         "heading": "Speed up your development with easy-to-use APIs",
         "text": "Nylas APIs simplifies integration complexities, offering a unified API solution tailored for developers."
-    }
+    },
    
+    "featureCard": [
+        {
+            "image": "Webhooks-2.svg",
+            "title": "Developer-friendly",
+            "text": "Leverage Nylas Docs, SDKs, CLI, and code samples to reduce time building and maintaining infrastructure."
+        },
+         {
+            "image": "Send-1.svg",
+            "title": "Reliable performance",
+            "text": "Ship features faster with security, scalability, and performance with a 99.9% guaranteed uptime.."
+        },
+         {
+            "image": "Cloud.svg",
+            "title": "Instant responses",
+            "text": "Instant email and event data as soon as your users connect, with no sync delays."
+        },
+         {
+            "image": "Webhooks-2.svg",
+            "title": "Developer-friendly",
+            "text": "Receive real-time notifications to your application that will scale with you."
+        }
+    ],
+
+    
+  "codePreview": {
+    "title": "Get the last 5 email messages from a user’s inbox",
+    "languages": [
+      {
+        "id": "node",
+        "label": "Node.js",
+        "icon": "Node.Js.svg",
+        "code": "const messages = await nylas.messages.list({\n  identifier,\n  queryParams: {\n    limit: 5,\n  }\n});"
+      },
+      {
+        "id": "ruby",
+        "label": "Ruby",
+        "icon": "Ruby.svg",
+        "code": "messages = nylas.messages.list(\n  identifier,\n  query_params: { limit: 5 }\n)"
+      },
+      {
+        "id": "python",
+        "label": "Python",
+        "icon": "Python.svg",
+        "code": "messages = nylas.messages.list(\n  identifier,\n  query_params={\"limit\": 5}\n)"
+      },
+      {
+        "id": "java",
+        "label": "Java",
+        "icon": "Java.svg",
+        "code": "Messages messages = nylas.messages().list(\n  identifier,\n  Map.of(\"limit\", 5)\n);"
+      },
+      {
+        "id": "curl",
+        "label": "Curl",
+        "icon": "Curl.svg",
+        "code": "curl -X GET \"https://api.nylas.com/messages?limit=5\""
+      },
+      {
+        "id": "response",
+        "label": "Response",
+        "icon": "Curl.svg",
+        "code": "{\n  \"messages\": [ ... ],\n  \"count\": 5\n}"
+      }
+    ]
+  }
 }
