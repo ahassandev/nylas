@@ -7,6 +7,7 @@ import LogosBar from "./Components/LogosBar";
 import MeetNylas from "./Components/MeetNylas";
 import Accordion from "./Components/Accordion";
 import Developers from "./Components/Developers";
+import Customer from "./Components/Customer";
  
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <MeetNylas/>
       <Accordion />
       <Developers />
+      <Customer />
     </div>
   );
 };

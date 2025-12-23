@@ -230,5 +230,80 @@
         "code": "{\n  \"messages\": [ ... ],\n  \"count\": 5\n}"
       }
     ]
+  },
+
+  "customerData":{
+    "title": "Customers",
+    "heading": "Powering the world’s best product teams",
+    "text": "Trusted by 250,000+ developers and growing."
+  }, 
+
+  "customerShowCase":
+    [
+  {
+    "id": 1,
+    "logo": "logo-crunchbase.svg",
+    "title": "Crunchbase increases sales productivity and bookings with Nylas",
+    "stats": [
+      {
+        "value": "1 new",
+        "label": "pricing tier added to increase revenue"
+      },
+      {
+        "value": "$75k",
+        "label": "saved from Google security review"
+      }
+    ],
+    "quote": "Adding bi-directional email sync provides our users with a way to increase their productivity within the Crunchbase platform [while encouraging upsells to a new pricing tier with premium features]",
+    "person": {
+      "name": "John Doe",
+      "role": "Product Manager",
+      "avatar": "CustomerImage.png"
+    }
+  },
+  {
+    "id": 2,
+    "logo": "Dialpad-7-1.png",
+    "title": "Dialpad launches secure, reliable contact sync while saving developer resources",
+    "stats": [
+      {
+        "value": "2 days",
+        "label": "to launchable code with Nylas"
+      },
+      {
+        "value": "6+",
+        "label": "months cut from development timelines"
+      }
+    ],
+    "quote": "This solution reduced our manual work and improved candidate experience.",
+    "person": {
+      "name": "Sarah Khan",
+      "role": "HR Lead",
+      "avatar": "CustomerImage.png"
+    }
+  },
+  {
+    "id": 3,
+    "logo": "logo-ceridian-1.svg",
+    "title": "Ceridian reduces manual work for recruiters with interview scheduling",
+    "stats": [
+      {
+        "value": "1 year",
+        "label": "saved in development time and resources"
+      },
+      {
+        "value": "1 API",
+        "label": "calendar integration"
+      }
+    ],
+    "quote": "We solved obstacles that would have taken much longer without this API.",
+    "person": {
+      "name": "John Whyte",
+      "role": "Director of Product Management",
+      "avatar": "CustomerImage.png"
+    }
   }
-}
+]
+
+  }
+

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { DataContext } from "../DataContext";
 
 function FeatureCard() {
-  const { data } = useContext(DataContext);
+  const { data } = useContext(DataContext); 
   const featureCards = data.featureCard;
 
   return (
