@@ -275,7 +275,7 @@
         "label": "months cut from development timelines"
       }
     ],
-    "quote": "This solution reduced our manual work and improved candidate experience.",
+    "quote": "“One of the advantages of integrating with Nylas was how straightforward it was to sync contacts across multiple service providers and regardless of which version of Exchange our customers use.”",
     "person": {
       "name": "Sarah Khan",
       "role": "HR Lead",
@@ -296,14 +296,21 @@
         "label": "calendar integration"
       }
     ],
-    "quote": "We solved obstacles that would have taken much longer without this API.",
+    "quote": "“By partnering with Nylas we were able to solve technical obstacles that would’ve taken us a lot longer on our own and required a much larger investment of resources.”.",
     "person": {
       "name": "John Whyte",
       "role": "Director of Product Management",
       "avatar": "CustomerImage.png"
     }
   }
-]
+],
+
+"securityData": {
+  "title": "Security",
+  "heading": "Security built into the foundation of our platform",
+  "text": "Our enterprise-grade security is backed by compliance with industry-leading standard"
+}
+
 
   }
 

@@ -8,6 +8,7 @@ import MeetNylas from "./Components/MeetNylas";
 import Accordion from "./Components/Accordion";
 import Developers from "./Components/Developers";
 import Customer from "./Components/Customer";
+import Security from "./Components/Security";
  
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Accordion />
       <Developers />
       <Customer />
+      <Security />
     </div>
   );
 };

@@ -10,7 +10,7 @@ const CustomerShowcase = () => {
   return (
     <section className="max-w-7xl mx-auto pl-20 py-10">
       
-      <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-12">
+      <div className="grid grid-col-1 md:grid-cols-[220px_1fr] gap-12">
 
        
         <div className="flex flex-col gap-6 items-start">
@@ -44,10 +44,10 @@ const CustomerShowcase = () => {
           <div className="flex gap-12 mb-6">
             {activeCustomer.stats.map((stat, index) => (
               <div key={index}>
-                <p className="text-2xl font-bold text-blue-600">
+                <p className="text-4xl font-bold mb-2 text-blue-600">
                   {stat.value}
                 </p>
-                <p className="text-sm text-gray-600">
+                <p className="text-lg text-gray-600">
                   {stat.label}
                 </p>
               </div>
