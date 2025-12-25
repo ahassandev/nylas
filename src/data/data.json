@@ -305,12 +305,33 @@
   }
 ],
 
-"securityData": {
-  "title": "Security",
-  "heading": "Security built into the foundation of our platform",
-  "text": "Our enterprise-grade security is backed by compliance with industry-leading standard"
+
+  "securityData": {
+    "title": "Security",
+    "heading": "Security built into the foundation of our platform",
+    "text": "Our enterprise-grade security is backed by compliance with industry-leading standard"
+  },
+
+  "securityImages": [
+    {
+      "image": "security-img-1.svg"
+    },
+    {
+      "image": "security-img-2.svg"
+    },
+    {
+      "image": "security-img-3.svg"
+    },
+    {
+      "image": "security-img-4.svg"
+    },
+    {
+      "image": "security-img-1.svg"
+    }
+  ]
 }
 
 
-  }
+
+  
 
