@@ -11,7 +11,7 @@ function BuildingFuture() {
 
     outline:
       "group text-white px-6 py-3 rounded-lg font-semibold hover:text-blue-400 transition-all duration-300",
-  };
+  };    
 
   return (
     <section className="bg-gray-950 px-10 py-16">
