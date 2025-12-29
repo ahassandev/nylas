@@ -328,7 +328,46 @@
     {
       "image": "security-img-1.svg"
     }
-  ]
+  ],
+
+  "securityRightImage":{
+    "image": "globe.png" 
+  },
+
+  "securityServices": [
+    {
+      "title": "34.5B+",
+      "text": "API transactions and 200TB of data processed daily."
+    },
+    {
+      "title": "99.99%",
+      "text": "historical uptime for Nylas services."
+    }, 
+    {
+      "title": "Save 50%",
+      "text": "of dev resources to focus on core product functionality."
+    }
+  ],
+
+  "buildingFuture": {
+  "heading": "Start building the future",
+  "text": "Get your API key and connect up to 5 accounts for free.",
+  "buttons": [
+    {
+      "text": "Build for free",
+      "link": "/build",
+      "type": "primary"
+    },
+    {
+      "text": "Contact Sales",
+      "link": "/contact", 
+      "type": "outline"
+    }
+  ],
+  "rightImage": "Group-117.png"
+  
+}
+
 }
 
 

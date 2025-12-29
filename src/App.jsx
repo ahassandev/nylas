@@ -9,6 +9,7 @@ import Accordion from "./Components/Accordion";
 import Developers from "./Components/Developers";
 import Customer from "./Components/Customer";
 import Security from "./Components/Security";
+import BuildingFuture from "./Components/BuildingFuture";
  
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <Developers />
       <Customer />
       <Security />
+      <BuildingFuture />
     </div>
   );
 };
